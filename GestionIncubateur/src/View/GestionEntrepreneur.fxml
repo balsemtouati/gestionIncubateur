@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.gestionEntrepreneur">
+   <children>
+      <BorderPane layoutX="78.0" layoutY="62.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="57.0" prefWidth="600.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="81.0" fitWidth="170.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Capture%20d'écran%202024-11-28%20220546.png" />
+                     </image>
+                     <effect>
+                        <GaussianBlur />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="81.0" fitWidth="170.0" layoutX="121.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Capture%20d'écran%202024-11-28%20220546.png" />
+                     </image>
+                     <effect>
+                        <GaussianBlur />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="81.0" fitWidth="170.0" layoutX="239.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Capture%20d'écran%202024-11-28%20220546.png" />
+                     </image>
+                     <effect>
+                        <GaussianBlur />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="81.0" fitWidth="170.0" layoutX="360.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Capture%20d'écran%202024-11-28%20220546.png" />
+                     </image>
+                     <effect>
+                        <GaussianBlur />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="81.0" fitWidth="170.0" layoutX="481.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Capture%20d'écran%202024-11-28%20220546.png" />
+                     </image>
+                     <effect>
+                        <GaussianBlur />
+                     </effect>
+                  </ImageView>
+                  <Button fx:id="minimizeButton" layoutX="541.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleMinimizeButtonAction" text="-" />
+                  <Button fx:id="closeButton" layoutX="567.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" text="x" />
+               </children>
+            </AnchorPane>
+         </top>
+        <center>
+    <AnchorPane prefHeight="337.0" prefWidth="307.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+        <children>
+            <AnchorPane layoutX="15.0" layoutY="12.0" prefHeight="124.0" prefWidth="580.0" style="-fx-background-radius: 10px; -fx-background-color: #AEC6CF;">
+                <children>
+                    <Label fx:id="entrepreneurIdLabel" layoutX="380.0" layoutY="94.0" text="EntrepreneurID :" textFill="#1a3a86">
+                        <font>
+                            <Font name="System Bold" size="11.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="nomTextField" layoutX="82.0" layoutY="55.0" prefHeight="26.0" prefWidth="102.0" style="-fx-background-radius: 8px;" />
+                    <TextField fx:id="prenomTextField" layoutX="84.0" layoutY="94.0" prefHeight="26.0" prefWidth="102.0" style="-fx-background-radius: 8px;" />
+                    <TextField fx:id="cinTextField" layoutX="263.0" layoutY="58.0" prefHeight="26.0" prefWidth="102.0" style="-fx-background-radius: 8px;" />
+                    <TextField fx:id="emailTextField" layoutX="265.0" layoutY="92.0" prefHeight="26.0" prefWidth="100.0" style="-fx-background-radius: 8px;" />
+                    <TextField fx:id="tailleEquipeTextField" layoutX="473.0" layoutY="52.0" prefHeight="26.0" prefWidth="102.0" style="-fx-background-radius: 8px;" />
+                    <Label fx:id="nomLabel" layoutX="29.0" layoutY="61.0" text="Nom :" textFill="#1a3a86">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="prenomLabel" layoutX="213.0" layoutY="98.0" text="Adresse :" textFill="#1a3a86">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="cinLabel" layoutX="217.0" layoutY="66.0" text="CIN :" textFill="#1a3a86">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="entrepreneurIdTextField" layoutX="473.0" layoutY="88.0" prefHeight="26.0" prefWidth="102.0" style="-fx-background-radius: 8px;" />
+                    <Label fx:id="tailleEquipeLabel" layoutX="383.0" layoutY="59.0" text="TailleEquipe :" textFill="#1a3a86">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="detailsLabel" layoutX="28.0" layoutY="96.0" text="Prénom :" textFill="#1a3a86">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="headerLabel2" layoutX="12.0" layoutY="27.0" prefHeight="18.0" prefWidth="258.0" text="Veuillez Saisir Les détails De L'entrepreneur" textFill="#1a3a86">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                           </font></Label>
+                </children>
+            </AnchorPane>
+            <AnchorPane layoutX="9.0" layoutY="141.0" prefHeight="342.0" prefWidth="586.0" style="-fx-background-radius: 10px; -fx-background-color: #AEC6CF;">
+                <children>
+                    <TableView fx:id="entrepreneurTableView" layoutX="19.0" layoutY="39.0" prefHeight="198.0" prefWidth="548.0">
+                        <columns>
+                                                        <TableColumn fx:id="nomColumn" prefWidth="60.79998779296875" text="nom" />
+                            <TableColumn fx:id="prenomColumn" prefWidth="70.4000244140625" text="prénom" />
+                            <TableColumn fx:id="cinColumn" prefWidth="77.60003662109375" text="CIN" />
+                            <TableColumn fx:id="emailColumn" prefWidth="92.0" text="email" />
+                            <TableColumn fx:id="tailleEquipeColumn" prefWidth="130.4000244140625" text="tailleEquipe" />
+                            <TableColumn fx:id="entrepreneurIdColumn" minWidth="2.39990234375" prefWidth="115.20001220703125" text="EntrepreneurId" />
+                        </columns>
+                    </TableView>
+                    <Button fx:id="ajouterEntrepreneurButton" layoutX="350.0" layoutY="245.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="76.0" style="-fx-background-radius: 8px; -fx-background-color: #1a3a86;" text="ajouter" textFill="WHITE" />
+                    <Button fx:id="supprimerEntrepreneurButton" layoutX="445.0" layoutY="245.0" mnemonicParsing="false" style="-fx-background-radius: 8px; -fx-background-color: #1a3a86;" text="supprimer" textFill="WHITE" />
+                        <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="14.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Capture%20d'écran%202024-11-27%20113001.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="buttonRetourner" layoutX="48.0" layoutY="304.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="68.0" style="-fx-background-color: #5784BA;" text="Acceuil" />
+                        <Button fx:id="ButtonGestionProjet" layoutX="452.0" layoutY="292.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: #5784BA;" text="Page Projet" textFill="WHITE" />
+                </children>
+            </AnchorPane>
+                  <Label fx:id="headerLabel" layoutX="39.0" layoutY="5.0" prefHeight="30.0" prefWidth="548.0" text="_______________GESTION      DES     ENTREPRENEURS___________" textFill="#1a3a86">
+                     <font>
+                        <Font name="Algerian" size="18.0" />
+                     </font>
+                  </Label>
+        </children>
+    </AnchorPane>
+</center>
+</BorderPane>
+</children>
+</AnchorPane>

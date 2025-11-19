@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="288.0" prefWidth="476.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <ImageView fitHeight="275.0" fitWidth="329.0" layoutX="73.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="myImageView" fitHeight="348.0" fitWidth="514.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/WhatsApp%20Image%202024-11-26%20à%2000.23.03_76fcaf74.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </ImageView>
+      
+      <!-- TextField for username -->
+      <TextField fx:id="usernameField" layoutX="120.0" layoutY="128.0" prefHeight="30.0" prefWidth="255.0" promptText="Nom d'utilisateur" style="-fx-background-color: #FFFFFFB3;" />
+
+      <!-- Label for Username -->
+      <Text fill="WHITE" layoutX="120.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identifiant">
+         <font>
+            <Font name="Bauhaus 93" size="14.0" />
+         </font>
+      </Text>
+      
+      <!-- Label for Password -->
+      <Text fill="WHITE" layoutX="120.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe">
+         <font>
+            <Font name="Bauhaus 93" size="14.0" />
+         </font>
+      </Text>
+<Text fx:id="feedbackText" layoutX="120.0" layoutY="200.0" />
+
+      <!-- Button for login -->
+      <Button fx:id="loginButton" layoutX="199.0" layoutY="255.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" text="Connexion" />
+
+      <!-- Additional Image View for icons -->
+      <ImageView fx:id="logologin" fitHeight="26.0" fitWidth="30.0" layoutX="352.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Capture d'écran 2024-11-26 004422.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="149.0" layoutY="49.0" prefHeight="30.0" prefWidth="219.0" text="GESTION D'INCUBATEUR" textFill="WHITE">
+         <font>
+            <Font name="Bernard MT Condensed" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="minimizeButton" layoutX="402.0" layoutY="5.0" minWidth="38.0" mnemonicParsing="false" onAction="#handleMinimizeButtonAction" prefHeight="30.0" prefWidth="38.0" text="-" textFill="WHITE" />
+      <Button fx:id="closeButton" layoutX="460.0" layoutY="6.0" minWidth="37.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" prefHeight="30.0" prefWidth="41.0" text="x" />
+      <PasswordField fx:id="passwordField" layoutX="118.0" layoutY="190.0" prefHeight="26.0" prefWidth="234.0" promptText="mot de passe" />
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="349.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Capture%20d'écran%202024-11-26%20005138.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

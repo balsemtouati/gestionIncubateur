@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="402.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AcceuilController">
+   <children>
+      <ImageView fx:id="backgroundImage" fitHeight="400.0" fitWidth="606.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/WhatsApp%20Image%202024-11-26%20à%2000.23.03_76fcaf74.jpg" />
+         </image>
+         <effect>
+            <Lighting bumpInput="$null">
+            </Lighting>
+         </effect>
+      </ImageView>
+      <Label fx:id="welcomeLabel" layoutX="96.0" layoutY="130.0" prefHeight="43.0" prefWidth="157.0" text="BIENVENUE " textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Poster Compressed" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="subtitleLabel" layoutX="147.0" layoutY="181.0" prefHeight="43.0" prefWidth="268.0" text="DANS NOTRE APPLICATION" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Poster Compressed" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="entrepreneurButton" layoutX="14.0" layoutY="68.0" mnemonicParsing="false" onAction="#handleButtonActionEntrepreneur" prefHeight="26.0" prefWidth="95.0" text="Entrepreneur" textFill="#392ea1" underline="true" />
+      <Button fx:id="minimizeButton" layoutX="519.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleMinimizeButtonAction" text="-" />
+      <Button fx:id="closeButton" layoutX="550.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" text="x" />
+      <SplitMenuButton fx:id="evenementbuutton" layoutX="450.0" layoutY="68.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="128.0" style="-fx-background-color: transparent;" text="Evenement" textFill="#392ea1" underline="true">
+        <items>
+          <MenuItem fx:id="formationMenuItem" mnemonicParsing="false" onAction="#handleFormation" text="Formation" />
+          <MenuItem fx:id="conferenceMenuItem" mnemonicParsing="false" onAction="#handleConference" text="Conférence" />
+        </items>
+      </SplitMenuButton>
+      <Button fx:id="ProjetButton" layoutX="230.0" layoutY="68.0" mnemonicParsing="false" onAction="#handleButtonActionProjet" prefHeight="26.0" prefWidth="95.0" text="projet" textFill="#392ea1" underline="true" />
+      <Button fx:id="investisseurButton" layoutX="121.0" layoutY="68.0" mnemonicParsing="false" onAction="#handleButtonActionInvestisseur" prefHeight="26.0" prefWidth="95.0" text="Investisseur" textFill="#392ea1" underline="true" />
+      <Button fx:id="ressourceButton" layoutX="338.0" layoutY="68.0" mnemonicParsing="false" onAction="#handleButtonActionRessource" prefHeight="26.0" prefWidth="95.0" text="Ressources" textFill="#392ea1" underline="true" />
+      <Label fx:id="subtitleLabel1" layoutX="321.0" layoutY="231.0" prefHeight="43.0" prefWidth="218.0" text="GESTION  D'INCUBATEUR" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Poster Compressed" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

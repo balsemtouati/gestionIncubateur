@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GestionInvestisseurController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="331.0" prefWidth="658.0">
+         <children>
+            <AnchorPane layoutX="493.0" prefHeight="331.0" prefWidth="116.0" />
+            <AnchorPane fx:id="mainPane" layoutX="277.0" layoutY="75.0" prefHeight="336.0" prefWidth="526.0" style="-fx-background-color: white; -fx-background-radius: 20px;" styleClass="shaddow">
+               <children>
+                  <Label fx:id="statusLabel" layoutX="21.0" layoutY="209.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <TableView fx:id="investorTable" layoutX="21.0" layoutY="47.0" prefHeight="215.0" prefWidth="475.0" style="-fx-background-color: transparent; -fx-border-image-width: 2px; -fx-border-color: #D2B48C;">
+                     <columns>
+                        <TableColumn fx:id="nameColumn" prefWidth="56.79998779296875" text="nom" />
+                        <TableColumn fx:id="surnameColumn" prefWidth="64.0" text="prénom" />
+                        <TableColumn fx:id="cinColumn" prefWidth="47.199951171875" text="CIN" />
+                        <TableColumn fx:id="emailColumn" prefWidth="94.40011596679688" text="email" />
+                        <TableColumn fx:id="investmentCountColumn" prefWidth="113.5999755859375" text="nbInvestissements" />
+                        <TableColumn fx:id="investorIdColumn" prefWidth="98.39996337890625" text="investisseurID" />
+                     </columns>
+                  </TableView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TAN" height="50.0" layoutX="-300.0" layoutY="272.0" stroke="WHITE" strokeType="INSIDE" width="854.0" />
+                  <Button fx:id="addInvestorButton" layoutX="168.0" layoutY="284.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="79.0" style="-fx-background-color: #FAF2EA;" text="Ajouter" />
+                  <Button fx:id="suppInvestorButton" layoutX="259.0" layoutY="284.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #FAF2EA;" text="Supprimer" />
+                  <Button fx:id="ressButton" layoutX="472.0" layoutY="284.0" mnemonicParsing="false" style="-fx-background-color: #EED7C5;" text="Ressource" />
+                  <Button fx:id="buttonRetourner" layoutX="-237.0" layoutY="282.0" mnemonicParsing="false" style="-fx-background-color: #EED7C5;" text="Acceuil" />
+                  <ImageView fx:id="returnImageView" fitHeight="26.0" fitWidth="33.0" layoutX="-276.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Capture%20d'écran%202024-11-27%20113001.png" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutX="28.0" layoutY="5.0" prefHeight="36.0" prefWidth="475.0">
+                     <children>
+                        <Label fx:id="titleLabel" prefHeight="26.0" prefWidth="471.0" text="Gestion            Des              Investisseurs" textFill="#392e2c">
+                           <font>
+                              <Font name="Algerian" size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="inputPane" layoutX="9.0" layoutY="74.0" prefHeight="262.0" prefWidth="258.0" style="-fx-background-color: #D2B48C; -fx-background-radius: 20;">
+               <children>
+                  <Label fx:id="investorIdLabel" layoutX="9.0" layoutY="208.0" text="InvestisseurID :" textFill="WHITE">
+                     <font>
+                        <Font name="Aldhabi" size="24.0" />
+                     </font>
+                  </Label>
+                                    <TextField fx:id="investorIdField" layoutX="146.0" layoutY="211.0" prefHeight="26.0" prefWidth="96.0" style="-fx-background-radius: 10;" />
+                  <TextField fx:id="investmentCountField" layoutX="147.0" layoutY="170.0" prefHeight="26.0" prefWidth="96.0" style="-fx-background-radius: 10;" />
+                  <Label fx:id="investmentCountLabel" layoutX="10.0" layoutY="166.0" text="NbrInvestissements :" textFill="WHITE">
+                     <font>
+                        <Font name="Aldhabi" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="emailField" layoutX="146.0" layoutY="128.0" prefHeight="26.0" prefWidth="96.0" style="-fx-background-radius: 10;" />
+                  <TextField fx:id="cinField" layoutX="146.0" layoutY="88.0" prefHeight="26.0" prefWidth="96.0" style="-fx-background-radius: 10;" />
+                  <TextField fx:id="nameField" layoutX="148.0" layoutY="11.0" prefHeight="26.0" prefWidth="96.0" style="-fx-background-radius: 10;" />
+                  <TextField fx:id="surnameField" layoutX="147.0" layoutY="48.0" prefHeight="26.0" prefWidth="96.0" style="-fx-background-radius: 10;" />
+                  <Label fx:id="nameLabel" layoutX="15.0" layoutY="14.0" text="Nom :" textFill="WHITE">
+                     <font>
+                        <Font name="Aldhabi" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="surnameLabel" layoutX="13.0" layoutY="48.0" text="Prénom :" textFill="WHITE">
+                     <font>
+                        <Font name="Aldhabi" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cinLabel" layoutX="15.0" layoutY="84.0" text="CIN :" textFill="WHITE">
+                     <font>
+                        <Font name="Aldhabi" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="emailLabel" layoutX="13.0" layoutY="125.0" text="Email :" textFill="WHITE">
+                     <font>
+                        <Font name="Aldhabi" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="headerPane" prefHeight="84.0" prefWidth="748.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <ImageView fx:id="headerImageView1" fitHeight="82.0" fitWidth="366.0" layoutX="1.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/investisseurs-entreprise.jpg" />
+               </image>
+               <effect>
+                  <GaussianBlur />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="headerImageView2" fitHeight="82.0" fitWidth="366.0" layoutX="178.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/investisseurs-entreprise.jpg" />
+               </image>
+               <effect>
+                  <GaussianBlur />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="headerImageView3" fitHeight="82.0" fitWidth="366.0" layoutX="377.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/investisseurs-entreprise.jpg" />
+               </image>
+               <effect>
+                  <GaussianBlur />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="headerImageView4" fitHeight="82.0" fitWidth="215.0" layoutX="584.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/investisseurs-entreprise.jpg" />
+               </image>
+               <effect>
+                  <GaussianBlur />
+               </effect>
+            </ImageView>
+                        <ImageView fx:id="headerImageView5" fitHeight="88.0" fitWidth="220.0" layoutX="630.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/investisseurs-entreprise.jpg" />
+               </image>
+               <effect>
+                  <GaussianBlur />
+               </effect>
+            </ImageView>
+            <Button fx:id="minimizeButton" layoutX="784.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleMinimizeButtonAction" text="-" />
+            <Button fx:id="closeButton" layoutX="813.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" text="x" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

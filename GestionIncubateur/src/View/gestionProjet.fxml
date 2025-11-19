@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="394.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GestionProjetController">
+   <children>
+      <ImageView fitHeight="409.0" fitWidth="624.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </ImageView>
+      <Button fx:id="ajouterProjetButton" layoutX="256.0" layoutY="355.0" mnemonicParsing="false" onAction="#ajouterProjet" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: #C49D83;" text="ajouter" textFill="WHITE" />
+      <Label fx:id="resultLabel" layoutX="336.0" layoutY="275.0" />
+      <AnchorPane layoutX="12.0" layoutY="44.0" prefHeight="115.0" prefWidth="587.0" style="-fx-background-radius: 10px;">
+         <children>
+            <TextField fx:id="domaineField" layoutX="204.0" layoutY="45.0" prefHeight="26.0" prefWidth="98.0" />
+            <TextField fx:id="nomField" layoutX="39.0" layoutY="44.0" prefHeight="26.0" prefWidth="108.0" />
+            <Label layoutX="65.0" layoutY="26.0" text="NomProjet :">
+               <font>
+                  <Font name="Andalus" size="14.0" />
+               </font></Label>
+            <Label layoutX="232.0" layoutY="28.0" text="Domaine :">
+               <font>
+                  <Font name="Andalus" size="14.0" />
+               </font></Label>
+            <Label layoutX="386.0" layoutY="28.0" prefHeight="23.0" prefWidth="74.0" text="Description:">
+               <font>
+                  <Font name="Andalus" size="14.0" />
+               </font></Label>
+            <Label layoutX="154.0" layoutY="83.0" prefHeight="18.0" prefWidth="74.0" text="Propriétaire :">
+               <font>
+                  <Font name="Andalus" size="14.0" />
+               </font></Label>
+            <ComboBox fx:id="entrepreneurComboBox" layoutX="227.0" layoutY="80.0" prefWidth="150.0" />
+            <TextField fx:id="descriptionField" layoutX="362.0" layoutY="46.0" prefHeight="26.0" prefWidth="114.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="ButtonAcceuil" layoutX="35.0" layoutY="369.0" mnemonicParsing="false" onAction="#handleButtonRetourner" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #CCAEA4;" text="Acceuil" />
+      <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="12.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Capture%20d'écran%202024-11-27%20113001.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="suppProjetButton" layoutX="339.0" layoutY="356.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: #C49D83;" text="supprimer" textFill="WHITE" />
+      <Button fx:id="modifierProjetButton" layoutX="422.0" layoutY="356.0" mnemonicParsing="false" onAction="#modifierProjet" prefHeight="27.0" prefWidth="74.0" style="-fx-background-color: #C49D83;" text="modifier " textFill="WHITE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c49d83" height="409.0" layoutX="526.0" stroke="WHITE" strokeType="INSIDE" width="23.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c49d83" height="409.0" layoutX="580.0" stroke="WHITE" strokeType="INSIDE" width="23.0" />
+      <HBox layoutX="-3.0" layoutY="-6.0" prefHeight="61.0" prefWidth="638.0" style="-fx-background-color: #D6BCA5;">
+         <children>
+            <Text fill="#794d2f" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion           De             Projet ">
+               <HBox.margin>
+                  <Insets left="150.0" top="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Algerian" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6bca5" height="410.0" layoutX="613.0" layoutY="-1.0" stroke="#d6bca5" strokeType="INSIDE" width="22.0" />
+      <Button fx:id="closeButton" layoutX="601.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" text="x" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6bca5" height="409.0" layoutX="552.0" layoutY="2.0" stroke="#d6bca5" strokeType="INSIDE" width="23.0" />
+      <Button fx:id="minimizeButton" layoutX="576.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleMinimizeButtonAction" text="-" />
+      <TableView fx:id="projetTableView" layoutX="8.0" layoutY="169.0" prefHeight="158.0" prefWidth="618.0">
+         <columns>
+            <TableColumn fx:id="nomProjetcolumn" prefWidth="64.79998779296875" text="nomProjet" />
+            <TableColumn fx:id="domainecolumn" prefWidth="53.60003662109375" text="domaine" />
+            <TableColumn fx:id="descriptioncolumn" prefWidth="70.39996337890625" text="description" />
+            <TableColumn fx:id="nomPropcolumn" prefWidth="68.79998779296875" text=" nomProp" />
+            <TableColumn fx:id="prenomPropcolumn" prefWidth="82.4000244140625" text="prenomProp" />
+            <TableColumn fx:id="CINPropcolumn" prefWidth="56.0" text="CINProp" />
+            <TableColumn fx:id="emailPropcolumn" prefWidth="65.5999755859375" text="emailProp" />
+            <TableColumn fx:id="tailleequipecolumn" prefWidth="80.79998779296875" text="tailleEquipe" />
+            <TableColumn fx:id="idPropColumn" prefWidth="80.79998779296875" text="IdProp" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

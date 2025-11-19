@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Model/Gestion_Acteurs/Intervenant.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Model/Gestion_Evenements/Formation.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Model/Gestion_Acteurs/Formateur.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/projet.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Model/Gestion_Utilisateur/Personne.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/images/Capture%20d'écran%202024-11-26%20005138.png</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Model/Gestion_Projets/Projet.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/gestionincubateur/FXMLDocumentController.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Controller/LoginController.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/gestionincubateur/GestionIncubateur.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/gestionincubateur/FXMLDocument.fxml</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Model/Gestion_Utilisateur/Administrateur.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/images/Capture%20d'écran%202024-11-26%20004422.png</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Controller/AcceuilController.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/images/Capture%20d'écran%202024-11-27%20113001.png</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/View/gestionProjet.fxml</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Controller/AjouterRessourceController.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/View/ajouterRessource.fxml</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Controller/FormationController.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Controller/conferenceController.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/View/login.fxml</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/View/orgationsForm.fxml</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Model/Gestion_Evenements/Lieu.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/View/conference.fxml</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Model/Gestion_Evenements/Evenement.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/View/GestionEntrepreneur.fxml</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Controller/gestionEntrepreneur.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Model/Gestion_Projets/Ressource.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Controller/GestionProjetController.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Model/Gestion_Evenements/Conference.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/View/GestionInvestisseur.fxml</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/gestionincubateur/ErreurEvent.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/View/Acceuil.fxml</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Model/Gestion_Utilisateur/Entrepreneur.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Model/Gestion_Utilisateur/Investisseur.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/Controller/GestionInvestisseurController.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/currentConference.java</file>
+            <file>file:/C:/Users/touat/Desktop/JavaProjects/GestionIncubateur/src/GestionProjetController.java</file>
+        </group>
+    </open-files>
+</project-private>

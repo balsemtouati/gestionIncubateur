@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="405.0" prefWidth="480.0" style="-fx-background-color: #EBF2FA;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouterRessourceController">
+   <children>
+      <Button fx:id="ajouterResourceButton" layoutX="155.0" layoutY="369.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #939597;" text="ajouter" />
+      <TableView fx:id="RessourceTableView" layoutX="11.0" layoutY="169.0" prefHeight="146.0" prefWidth="596.0">
+         <columns>
+            <TableColumn fx:id="ressourceIDcolumn" prefWidth="76.00000286102295" text="ressourceID" />
+            <TableColumn fx:id="Montantcolumn" prefWidth="68.00006103515625" text="Montant" />
+            <TableColumn fx:id="nominvcolumn" minWidth="0.0" prefWidth="54.4000244140625" text="nominv" />
+            <TableColumn fx:id="prenominvcolumn" minWidth="4.79998779296875" prefWidth="70.39994812011719" text="prenominv" />
+            <TableColumn fx:id="CINcolumn" minWidth="0.0" prefWidth="64.79998779296875" text="CINinv" />
+            <TableColumn fx:id="emailInvcolumn" prefWidth="55.199951171875" text="emailInv" />
+            <TableColumn fx:id="investisseurIDcolumn" prefWidth="87.20001220703125" text="investisseurID" />
+            <TableColumn fx:id="nbinvestissementcolumn" prefWidth="137.60006713867188" text="nbinvestissement" />
+         </columns>
+      </TableView>
+      <Label layoutX="-4.0" layoutY="14.0" prefHeight="24.0" prefWidth="572.0" text="      ________________GESTION   DES    RESSOURCES_____________" textFill="#3b56a4">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="22.0" layoutY="54.0" prefHeight="115.0" prefWidth="587.0" style="-fx-background-radius: 10px;">
+         <children>
+            <TextField fx:id="Montantfield" layoutX="263.0" layoutY="18.0" prefHeight="26.0" prefWidth="114.0" />
+            <TextField fx:id="ressourceIDfield" layoutX="72.0" layoutY="18.0" prefHeight="26.0" prefWidth="108.0" />
+            <Label layoutX="-13.0" layoutY="23.0" text="ressourceID :" textFill="#3b56a4">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font></Label>
+            <Label layoutX="191.0" layoutY="23.0" text="Montant :" textFill="#3b56a4">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="388.0" layoutY="22.0" prefHeight="18.0" prefWidth="90.0" text="investisseur :" textFill="#3b56a4">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+               </font></Label>
+            <ComboBox fx:id="investisseurComboBox" layoutX="471.0" layoutY="18.0" prefHeight="26.0" prefWidth="114.0" />
+            <Label fx:id="resultLabel" layoutX="462.0" layoutY="81.0" />
+            <TextField fx:id="ressourceIDfieldrech" layoutX="415.0" layoutY="75.0" promptText="chercher" />
+            <Label layoutX="11.0" layoutY="79.0" text="VOUS POUVEZ CHERCHER LES RESSOUCES EN CLIQUANT SUR :" textFill="#3b56a4">
+               <font>
+                  <Font name="Baskerville Old Face" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="535.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Capture%20d'écran%202024-12-04%20181723.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="ButtonAcceuil" layoutX="45.0" layoutY="371.0" mnemonicParsing="false" onAction="#handleButtonRetourner" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #3b56a4;" text="Acceuil" textFill="#faf3f3" />
+      <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="22.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Capture%20d'écran%202024-11-27%20113001.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="supprimerButton" layoutX="275.0" layoutY="369.0" mnemonicParsing="false" onAction="#handlesupprimerRessource" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #939597;" text="supprimer" />
+      <Button fx:id="closeButton" layoutX="592.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" text="x" />
+      <Button fx:id="minimizeButton" layoutX="572.0" mnemonicParsing="false" onAction="#handleMinimizeButtonAction" text="-" />
+      <Button fx:id="totalButton" layoutX="388.0" layoutY="326.0" mnemonicParsing="false" onAction="#handleCalculerTotalMontant" prefHeight="26.0" prefWidth="61.0" style="-fx-background-color: #3b56a4;" text="Total" textFill="WHITE">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="totalMontant" layoutX="460.0" layoutY="328.0" promptText="montant total">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="12.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>
